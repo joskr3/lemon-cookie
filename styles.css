@@ -1,0 +1,82 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); */
+
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("/public/fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url("/public/fonts/Roboto/Roboto-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto-Regular", sans-serif;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  /* justify-content: center; */
+  background-image: url("/public/cookie.svg");
+  background-position: center;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* margin: auto; */
+  flex-grow: 1;
+  /* width: 90vw; */
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  /* flex basic equivale a width si es de tipo row , si la direccion es columna , se comportara como height(altura) */
+  /* width: 90vh; */
+  flex-basis: 90%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0px 32px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 1rem;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+
+  p {
+    font-family: "Roboto-Bold", sans-serif;
+    color: #824e3c;
+  }
+
+  img {
+    flex-basis: 9.375em;
+  }
+}
+
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: 200;
+  color: #824e3c;
+}
