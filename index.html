@@ -10,7 +10,7 @@
 
 <body>
   <header>
-    <nav>
+    <nav class="header-nav">
       <img src="public/cookie-logo.gif" alt="logo" width="100px">
       <p>Lemon Cookie</p>
       <ul>
@@ -22,15 +22,22 @@
   </header>
   <main>
     <section class="hero">
-      <h1>
-        Cookie del dia
-      </h1>
-      <h3>
-        Mint cookie
-      </h3>
-      <h5>
-        Disfruta la galleta
-      </h5>
+      <picture>
+        <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg" />
+        <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+        <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva" />
+      </picture>
+      <div class="hero-content">
+        <h1>
+          Cookie del dia
+        </h1>
+        <h3>
+          Mint cookie
+        </h3>
+        <h5>
+          Disfruta la galleta
+        </h5>
+      </div>
     </section>
     <nav class="menu">
       <ul>
