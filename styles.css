@@ -59,15 +59,13 @@ header {
   margin-left: auto;
   background-color: rgba(255, 255, 255, 0.75);
   margin-bottom: 10rem;
-
+  background-color: rgb(173, 86, 46);
   picture {
-    filter: opacity(0.85);
     height: auto;
     position: absolute;
 
     img {
       border-radius: 12px;
-
     }
   }
 }
@@ -254,11 +252,12 @@ header {
     border-radius: 12px;
     max-width: 50%;
     width: 45%;
-    min-height: 120px ;
+    min-height: 120px;
     height: 100%;
   }
+
   p {
-    max-height: 15vh ;
+    max-height: 15vh;
     color: #824e3c;
     width: 100%;
     text-align: justify;
@@ -273,5 +272,39 @@ header {
 }
 
 footer {
-  grid-area: footer;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  color: #824e3c;
+
+  p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+
+  nav {
+    padding: 1rem;
+    margin: 0 12px;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
 }
