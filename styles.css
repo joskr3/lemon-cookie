@@ -46,6 +46,7 @@ header {
     p {
       font-family: "Roboto-Bold", sans-serif;
       color: #824e3c;
+      font-size: xx-large;
     }
 
     img {
@@ -76,21 +77,25 @@ header {
   display: flex;
   justify-content: center;
   position: relative;
+  height: 100vh;
 
   picture {
     img {
       border-radius: 12px;
       width: 80vw;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
   .hero-content {
+    width: 80vw;
     color: white;
-    text-align: center;
+    /* text-align:left; */
     position: absolute;
     display: flex;
-    height: 50%;
-    justify-content: space-around;
+    height: 100%;
+    justify-content: space-between;
     flex-direction: column;
     padding: 1rem;
 
@@ -100,11 +105,11 @@ header {
     }
 
     h3 {
-      font-size: 2em;
+      font-size: 2.5em;
     }
 
     h5 {
-      font-size: 1.5em;
+      font-size: 2.5em;
     }
   }
 }
@@ -122,13 +127,14 @@ header {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(255, 255, 255, 0.35);
+  font-size: larger;
 
   ul {
     display: flex;
     flex-basis: 100%;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 100px;
     padding: 10px;
     align-items: center;
 
@@ -145,16 +151,18 @@ header {
 
 .contenido {
   grid-area: contenido;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 2rem auto;
   max-height: fit-content;
-  max-width: 100%;
+  max-width: 80%;
   border-radius: 12px;
   padding: 0.25rem;
 
   video {
-    max-width: 100%;
+    max-width: 60%;
     padding-right: 0.5rem;
     padding-left: 0.5rem;
     margin: 12px auto;
