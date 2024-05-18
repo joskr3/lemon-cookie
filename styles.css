@@ -35,17 +35,24 @@ body {
 
 header {
   grid-area: header;
-
+  display: flex;
+  border: 1px solid #824e3c;
+  border-radius: 25px;
+  padding: 1rem;
+  margin: 2.5rem 0.95rem 1rem 0.95rem;
   nav {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     margin: auto;
+    max-width: 100%;
+    width: 90%;
 
     p {
       font-family: "Roboto-Bold", sans-serif;
       color: #824e3c;
+      font-size: 32px;
     }
 
     img {
@@ -63,6 +70,7 @@ header {
 
         a {
           text-decoration: none;
+          font-size: 18px;
           font-weight: 200;
           color: #824e3c;
         }
