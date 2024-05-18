@@ -40,6 +40,7 @@ header {
   border-radius: 25px;
   padding: 1rem;
   margin: 2.5rem 0.95rem 1rem 0.95rem;
+
   nav {
     display: flex;
     justify-content: space-around;
@@ -127,9 +128,15 @@ header {
   margin: auto;
   margin-top: 2rem;
   max-width: 90vw;
+  max-height: 20vh;
+  height: 7vh;
+  justify-content: center;
+  margin-bottom: 2rem;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(255, 255, 255, 0.35);
+  max-width: 100%;
+  width: 60%;
+  border: none;
 
   ul {
     display: flex;
@@ -231,6 +238,26 @@ footer {
         a {
           text-decoration: none;
           color: inherit;
+        }
+      }
+    }
+  }
+}
+
+
+/* para pantallas de 600px o más */
+@media (width >=600px) {
+  .menu {
+    border: 1px solid #824e3c;
+    width: 70%;
+    height: 10vh;
+
+    ul {
+      gap: 1.25em;
+
+      li {
+        a {
+          font-size: 1.25em;
         }
       }
     }
